@@ -10,8 +10,9 @@
     <div class="col-xs-12">
     
     <app-recipe-item
-    *ngFor="let savedRecipe of savedRecipes" 
-    [recipe]="savedRecipe">
+    *ngFor="let savedRecipe of savedRecipes; let i = index" 
+    [recipe]="savedRecipe"
+    [index]="i">
     </app-recipe-item>
 
     </div>
